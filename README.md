@@ -4,6 +4,13 @@ Trying to reproduce why Playwright's `.click()` doesn't open up a tooltip starti
 
 The user behavior works as expected: when clicking a term with `openOnHover={false}`, the definition comes up. It also works in the developer console to use `.click()` on the `<button>` for the term. The issue is when using Playwright's `.click()`.
 
+## Reproduce
+
+1. `npm install`
+2. `npm test`
+
+You can start the server with `npm run dev`.
+
 ## Workarounds to get a passing test
 
 ### Downgrade to 1.52.0
