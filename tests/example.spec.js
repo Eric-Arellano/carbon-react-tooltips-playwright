@@ -9,5 +9,6 @@ test("tooltip click shows definition", async ({ page }) => {
   await expect(popup).not.toBeVisible();
 
   await term.click();
+
   await expect(popup).toBeVisible();
 });
